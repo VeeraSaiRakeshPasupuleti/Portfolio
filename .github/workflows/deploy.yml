@@ -42,7 +42,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./dist/portfolio/browser
+          path: ./dist/angular-dark-minimal-portfolio/browser
 
       - name: Deploy to GitHub Pages
         id: deployment
