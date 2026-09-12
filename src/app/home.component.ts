@@ -22,7 +22,7 @@ interface SkillGroup { title:string; icon:string; items:string[]; }
       </div>
 
       <div class="logo-wall"><div class="fade left"></div><div class="tech-track">
-        @for (tech of technologies; track tech) { <div class="tech"><img [src]="'/svg/'+tech+'.svg'" [alt]="tech"><span>{{pretty(tech)}}</span></div> }
+        @for (tech of technologies; track tech) { <div class="tech"><img [src]="'svg/'+tech+'.svg'" [alt]="tech"><span>{{pretty(tech)}}</span></div> }
         @for (tech of technologies; track 'copy-'+tech) { <div class="tech" aria-hidden="true"><img [src]="'/svg/'+tech+'.svg'" [alt]="tech"><span>{{pretty(tech)}}</span></div> }
       </div><div class="fade right"></div></div>
 
